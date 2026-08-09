@@ -6,8 +6,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="theme-color" content="#1f3a5f">
-<title>三重・名古屋 家族旅行 2026（スマホ版）</title>
+<title>三重・名古屋 家族旅行 2026</title>
 <style>
+
   :root{
     --navy:#1f3a5f; --navy2:#2c517f; --gold:#c1893a; --gold-soft:#e7c58c;
     --terra:#b8552f; --cream:#faf7f1; --paper:#ffffff; --ink:#242424;
@@ -86,9 +87,54 @@
     .note-inline{font-size:13px;}
     .notes ul, .check li{font-size:14px;}
   }
+
+
+  /* ===== 言語切替バー / แถบเลือกภาษา ===== */
+  .langbar{
+    background:var(--navy);
+    padding:max(9px, env(safe-area-inset-top)) 10px 9px;
+  }
+  .langbar-inner{max-width:860px; margin:0 auto; display:flex; gap:9px; justify-content:center;}
+  .langbtn{
+    appearance:none; -webkit-appearance:none; cursor:pointer;
+    font-family:"Noto Sans Thai","Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,Tahoma,sans-serif;
+    font-size:14.5px; font-weight:700; line-height:1.6; letter-spacing:.5px;
+    color:#fff; background:transparent; border:1px solid rgba(255,255,255,.38);
+    padding:7px 22px; border-radius:999px; min-width:112px;
+    transition:background .15s, color .15s, border-color .15s;
+  }
+  .langbtn:hover{background:rgba(255,255,255,.14);}
+  .langbtn:focus-visible{outline:2px solid var(--gold-soft); outline-offset:2px;}
+  .langbtn.active{background:var(--gold-soft); color:var(--navy); border-color:var(--gold-soft);}
+
+  /* ===== 言語コンテナ / คอนเทนเนอร์ภาษา ===== */
+  .doc{display:none;}
+  .doc.active{display:block;}
+  #doc-ja{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;}
+  #doc-th{font-family:"Noto Sans Thai","Thonburi","Sarabun","Leelawadee UI",Tahoma,sans-serif;}
+  #doc-th .hero h1{font-size:23px;}
+  #doc-th .hero .dates{font-size:18px;}
+  #doc-th .hero .meta{font-size:14px;}
+  @media(min-width:760px){
+    #doc-th .hero h1{font-size:29px;}
+  }
+  @media print{
+    .langbar{display:none;}
+  }
+
 </style>
 </head>
 <body>
+
+<nav class="langbar">
+  <div class="langbar-inner" role="tablist" aria-label="Language / ภาษา">
+    <button type="button" class="langbtn active" data-lang="ja" role="tab" aria-selected="true">日本語</button>
+    <button type="button" class="langbtn" data-lang="th" role="tab" aria-selected="false">ไทย</button>
+  </div>
+</nav>
+
+<div id="doc-ja" class="doc active">
+
 <header class="hero">
   <div class="eyebrow">FAMILY TRIP TO JAPAN</div>
   <h1>三重・名古屋 家族旅行 2026</h1>
@@ -313,5 +359,281 @@
   </footer>
 
 </div>
+
+</div>
+
+<div id="doc-th" class="doc">
+
+<header class="hero">
+  <div class="eyebrow">FAMILY TRIP TO JAPAN</div>
+  <h1>ทริปครอบครัวเที่ยวญี่ปุ่น 2026<br>มิเอะ &amp; นาโกย่า</h1>
+  <div class="dates">10 – 17 ตุลาคม 2026</div>
+  <div class="meta">
+    <span>👨‍👩‍👧‍👦 6 คน</span>
+    <span>✈ Singapore Airlines</span>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="section-title">✈ เที่ยวบิน</div>
+  <div class="flights">
+  <div class="flight-card">
+    <h3>ขาไป — 10 ต.ค. (เสาร์)</h3>
+    <div class="leg"><span class="code">BKK</span> 20:15 <span class="arrow">→</span> <span class="code">SIN</span> 23:40 <span style="font-size:12px;color:#6b6b6b;">บิน 2 ชม. 25 นาที</span> <span class="flt">SQ713</span></div>
+    <div class="layover">ต่อเครื่องที่สิงคโปร์ 1 ชม. 40 นาที</div>
+    <div class="leg"><span class="code">SIN</span> 01:20 <span class="arrow">→</span> <span class="code">NGO</span> 09:00 <span style="font-size:12px;color:#6b6b6b;">บิน 6 ชม. 40 นาที</span> <span class="flt">SQ672</span></div>
+    <div class="note-inline" style="padding-left:0;font-size:12.5px;">※ ออกจากสิงคโปร์และถึงนาโกย่าเป็นวันที่ 11 ต.ค. (อาทิตย์) 09:00 · รวมต่อเครื่อง ~10 ชม. 45 นาที</div>
+  </div>
+  <div class="flight-card">
+    <h3>ขากลับ — 17 ต.ค. (เสาร์)</h3>
+    <div class="leg"><span class="code">NGO</span> 10:25 <span class="arrow">→</span> <span class="code">SIN</span> 16:00 <span style="font-size:12px;color:#6b6b6b;">บิน 6 ชม. 35 นาที</span> <span class="flt">SQ671</span></div>
+    <div class="layover">ต่อเครื่องที่สิงคโปร์ 2 ชม. 30 นาที</div>
+    <div class="leg"><span class="code">SIN</span> 18:30 <span class="arrow">→</span> <span class="code">BKK</span> 20:00 <span style="font-size:12px;color:#6b6b6b;">บิน 2 ชม. 30 นาที</span> <span class="flt">SQ720</span></div>
+    <div class="note-inline" style="padding-left:0;font-size:12.5px;">※ ทุกเที่ยวบินชั้นประหยัด Boeing 787-10 / โหลดกระเป๋าได้คนละ 25 กก. · รวมต่อเครื่อง ~11 ชม. 35 นาที</div>
+  </div>
+
+  </div>
+
+  <div class="wifi">
+    📶 <b>Wi-Fi บนเครื่อง</b>: สมาชิก KrisFlyer ใช้ได้ <b>ฟรี ไม่จำกัด ทุกเที่ยวบิน</b> ผู้ที่ยังไม่เป็นสมาชิก แนะนำสมัคร KrisFlyer (ฟรี) ก่อนเดินทาง
+  </div>
+
+  <div class="section-title">🗓 กำหนดการรายวัน</div>
+
+  <!-- Day 1 -->
+  <div class="day">
+    <div class="day-head">
+      <div class="badge"><span class="d">10</span><span class="m">OCT</span></div>
+      <div class="t"><div class="dow">เสาร์ · DAY 1</div><h2>ออกเดินทางจากกรุงเทพฯ</h2></div>
+    </div>
+    <div class="stay-band">🛏 <b>ที่พัก:</b> นอนบนเครื่อง (SQ713 / SQ672)</div>
+    <div class="day-body">
+      <ul class="timeline">
+        <li><span class="tm">20:15</span>ออกจากสุวรรณภูมิ (SQ713) → ถึงชางงี สิงคโปร์ 23:40</li>
+        <li>ต่อเครื่องที่ชางงี (1 ชม. 40 นาที)</li>
+        <li>เที่ยวบินกลางดึกไปนาโกย่า (SQ672 ออก 01:20) — พักผ่อนบนเครื่องให้เต็มที่</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Day 2 -->
+  <div class="day">
+    <div class="day-head">
+      <div class="badge"><span class="d">11</span><span class="m">OCT</span></div>
+      <div class="t"><div class="dow">อาทิตย์ · DAY 2</div><h2>ถึงมิเอะ → เทศกาลสึ → เนื้อมัตสึซากะ</h2></div>
+    </div>
+    <div class="stay-band">🛏 <b>ที่พัก:</b> มัตสึซากะ — 4 คนที่โรงแรม / คุณคาซึ+ภรรยา+พ่อแม่คุณคาซึ ที่บ้าน</div>
+    <div class="day-body">
+      <ul class="timeline">
+        <li><span class="tm">09:00</span>ถึงสนามบินชูบุ เซ็นแทรร์ → ตรวจคนเข้าเมือง รับกระเป๋า ศุลกากร</li>
+        <li>~12:00 พักและทานอาหารเบา ๆ ในสนามบิน</li>
+        <li><span class="tm">12:00</span>นั่งเรือเร็ว เซ็นแทรร์ → ท่าเรือสึ นางิสะมาจิ (~45 นาที) <span class="tag">ต้องจอง</span></li>
+        <li><span class="tm">12:45</span>ถึงนางิสะมาจิ → รับ<b>รถเช่า 2 คัน</b> (คนขับ 2 คน)</li>
+        <li>บ่าย ชม <b>เทศกาลสึ (Tsu Matsuri)</b> — <b>เทศกาลที่ใหญ่ที่สุดแห่งหนึ่งของจังหวัดมิเอะ</b> · วันสุดท้ายของงาน</li>
+        <li>เย็น ขับรถไปมัตสึซากะ (~30 นาที) → เช็กอินโรงแรม</li>
+        <li>ค่ำ ทาน<b>เนื้อย่างมัตสึซากะ (8 คน)</b>ที่ร้าน "อิชโชบิน" ย่านคาวาอิ <span class="tag">ควรจอง</span></li>
+      </ul>
+      <div class="note-inline">วันอาทิตย์ในช่วงวันหยุดยาว โรงแรมและร้านอาหารคนเยอะ ควรจองล่วงหน้า</div>
+      <div class="note-inline"><b>ค่ำ 11–ค่ำ 14 ต.ค. พ่อแม่คุณคาซึ 2 ท่านมาสมทบ = 8 คน</b> · มื้ออาหารช่วงนี้ (อิชโชบิน/ทาจิโนะ/ชินยะ) และโทดายะ ต้องจอง<b>สำหรับ 8 คน (โทดายะ 4 ห้อง)</b></div>
+      <div class="note-inline">วันจัดเทศกาลสึอาจมีปิดถนน/ที่จอดแน่นรอบงาน · บริเวณงานห้ามนำรถเข้า ต้องเช็กตำแหน่งที่จอดรถล่วงหน้า · เช็กระยะเดิน/จุดพักล่วงหน้า (เผื่อผู้สูงอายุ)</div>
+    </div>
+  </div>
+
+  <!-- Day 3 -->
+  <div class="day">
+    <div class="day-head">
+      <div class="badge holiday"><span class="d">12</span><span class="m">OCT</span></div>
+      <div class="t"><div class="dow">จันทร์ · วันหยุด Sports Day · DAY 3</div><h2>เที่ยวเมืองมัตสึซากะ &amp; ช้อปปิ้ง</h2></div>
+    </div>
+    <div class="stay-band">🛏 <b>ที่พัก:</b> มัตสึซากะ</div>
+    <div class="day-body">
+      <ul class="timeline">
+        <li>วันสุดท้ายของวันหยุดยาว เลี่ยงที่เที่ยวคนเยอะ เที่ยวสบาย ๆ ในเมือง</li>
+        <li>ซากปราสาทมัตสึซากะ · หมู่บ้านซามูไร โกโจบัง ยาชิกิ</li>
+        <li>พิพิธภัณฑ์โมโตริ โนรินางะ · ถนนช้อปปิ้ง</li>
+        <li><b>AEON Town Matsusaka Funae</b> ช้อปปิ้ง: Uniqlo · GU · ABC Mart · MUJI <span class="tag">ครอบครัวชอบ</span></li>
+        <li>ค่ำ ทาน<b>ปลาไหลย่าง (อูนางิ)</b> ที่ร้าน "อูนางิ โนะ ทาจิโนะ" ย่านทาจิโนะ (8 คน) <span class="tag">เปิดวันหยุด</span></li>
+      </ul>
+      <div class="note-inline">Uniqlo / GU / ABC Mart เป็นสิ่งที่ครอบครัวรอคอยเป็นพิเศษ เผื่อเวลาไว้เยอะ ๆ</div>
+      <div class="note-inline">ร้าน "อูนางิ โนะ ทาจิโนะ": เปิดวันหยุด (ปิดวันพฤหัส) ค่ำวันหยุดเปิด 16:00 (last order 19:00) จองได้ โทร 0598-26-5550 มีที่นั่งเสื่อ</div>
+    </div>
+  </div>
+
+  <!-- Day 4 -->
+  <div class="day">
+    <div class="day-head">
+      <div class="badge onsen"><span class="d">13</span><span class="m">OCT</span></div>
+      <div class="t"><div class="dow">อังคาร · DAY 4</div><h2>ศาลเจ้าอิเสะ (ไนกู) → ออนเซ็นที่โทบะ</h2></div>
+    </div>
+    <div class="stay-band">🛏 <b>ที่พัก:</b> โทบะ "โทดายะ" — 8 คน · 4 ห้อง · ห้องอาบน้ำเหมาส่วนตัว</div>
+    <div class="day-body">
+      <ul class="timeline">
+        <li>เช้า เช็กเอาต์โรงแรมมัตสึซากะ → <b>ฝากกระเป๋าใบใหญ่ไว้ที่โรงแรม</b> เดินทางแบบเบา ๆ</li>
+        <li>เช้า สักการะ <b>ศาลเจ้าอิเสะ ไนกู (ศาลเจ้าชั้นใน)</b> — เฉพาะไนกูเท่านั้น</li>
+        <li>กลางวัน เดินชิม/ช้อปที่ถนนโอคาเงะโยโกโช</li>
+        <li>บ่าย เดินทางไปโทบะ → เช็กอินเรียวกัง "โทดายะ"</li>
+        <li>แช่ <b>ออนเซ็นห้องเหมาส่วนตัวฟรี</b> (8 คน) <span class="tag">ไม่ต้องจอง</span></li>
+      </ul>
+      <div class="note-inline">คำนึงถึงผู้สูงอายุ วันนี้จัดแค่ 1–2 จุด (ไนกู + พักโทบะ) งดเกกูและหินคู่เมโอโตะอิวะ · <b>ออนเซ็นห้องเหมาส่วนตัวฟรีของโทดายะมี 5 ห้อง ใช้ได้ตลอดโดยไม่ต้องจอง</b> มีบ่อแช่เท้า 2 จุด เหมาะกับผู้ที่ไม่คุ้นกับการอาบน้ำรวมแบบญี่ปุ่น</div>
+    </div>
+  </div>
+
+  <!-- Day 5 -->
+  <div class="day">
+    <div class="day-head">
+      <div class="badge"><span class="d">14</span><span class="m">OCT</span></div>
+      <div class="t"><div class="dow">พุธ · DAY 5</div><h2>วิสัน (VISON) → กลับมัตสึซากะ</h2></div>
+    </div>
+    <div class="stay-band">🛏 <b>ที่พัก:</b> มัตสึซากะ — 4 คนที่โรงแรม / คุณคาซึ+ภรรยา+พ่อแม่คุณคาซึ ที่บ้าน</div>
+    <div class="day-body">
+      <ul class="timeline">
+        <li>เช้า เช็กเอาต์โทดายะ → เที่ยว <b>เกาะไข่มุกมิกิโมโตะ</b> ที่โทบะ (โชว์อามะดำน้ำ / ไข่มุก)</li>
+        <li><b>VISON (เมืองทากิ)</b> ทานกลางวัน เดินตลาด/มาร์เช่ ช้อปปิ้ง</li>
+        <li>รีสอร์ตเชิงพาณิชย์ที่ใหญ่ที่สุดแห่งหนึ่งในญี่ปุ่น เที่ยวได้สบาย ๆ ครึ่งวัน</li>
+        <li>เย็น กลับมัตสึซากะ (~30 นาที)</li>
+        <li>ค่ำ ทาน<b>ไก่ย่างมัตสึซากะ</b>ที่ร้าน "ชินยะ" ย่านทาจิโนะ (8 คน · คืนสุดท้ายที่พ่อแม่คุณคาซึร่วมด้วย)</li>
+      </ul>
+      <div class="note-inline">เกาะไข่มุกมิกิโมโตะ (โทบะ) → วิสัน (ทากิ) ขับรถ ~1 ชม. (ผ่านอิเสะไปทางตะวันตก)</div>
+      <div class="note-inline">ร้าน "ชินยะ": ปิดวันอาทิตย์ (14 ต.ค. พุธ เปิด) เปิด 17:00–21:00 (last order 20:30) จองได้ โทร 0598-20-8929</div>
+    </div>
+  </div>
+
+  <!-- Day 6 -->
+  <div class="day">
+    <div class="day-head">
+      <div class="badge"><span class="d">15</span><span class="m">OCT</span></div>
+      <div class="t"><div class="dow">พฤหัสบดี · DAY 6</div><h2>ไปนาโกย่า (รถไฟด่วนคินเท็ตสึ)</h2></div>
+    </div>
+    <div class="stay-band">🛏 <b>ที่พัก:</b> นาโกย่า (ใกล้สถานีนาโกย่า)</div>
+    <div class="day-body">
+      <ul class="timeline">
+        <li>เช้า คืน<b>รถเช่า 2 คัน</b>ที่มัตสึซากะ</li>
+        <li><b>รถไฟด่วนพิเศษคินเท็ตสึ</b> มัตสึซากะ → คินเท็ตสึ นาโกย่า (~1 ชม. 8 นาที) <span class="tag">ต้องมีตั๋วด่วน</span></li>
+        <li>ตัวเลือก: ปราสาทนาโกย่า / พิพิธภัณฑ์โตโยต้า / ซาคาเอะ-Oasis21 / Midland Square (จุดชมวิว)</li>
+      </ul>
+      <div class="note-inline">คำนึงถึงผู้สูงอายุ เลือก 1–2 จุดกำลังดี (เช่น ปราสาทนาโกย่า + ซาคาเอะ) เดินทางในเมืองใช้รถไฟใต้ดิน/เมเท็ตสึ</div>
+    </div>
+  </div>
+
+  <!-- Day 7 -->
+  <div class="day">
+    <div class="day-head">
+      <div class="badge"><span class="d">16</span><span class="m">OCT</span></div>
+      <div class="t"><div class="dow">ศุกร์ · DAY 7</div><h2>เที่ยวนาโกย่า (ฝั่งตะวันออก)</h2></div>
+    </div>
+    <div class="stay-band">🛏 <b>ที่พัก:</b> นาโกย่า (ใกล้สถานีนาโกย่า)</div>
+    <div class="day-body">
+      <ul class="timeline">
+        <li>ตัวเลือก: <b>สวนสนุกจิบลิ (นางาคุเตะ)</b> / สวนสัตว์ฮิงาชิยามะ &amp; Sky Tower / ตลาดกลางยานางิบาชิ</li>
+        <li>ตลาดยานางิบาชิเปิดช่วงเช้า → ไปตอนเช้า / สวนสัตว์และจิบลิใช้เวลาครึ่งวัน–เต็มวัน</li>
+        <li><b>สวนสนุกจิบลิต้องจองล่วงหน้า (ระบุวันเวลา ไม่มีขายหน้างาน)</b> <span class="tag">จองแต่เนิ่น ๆ</span></li>
+      </ul>
+      <div class="note-inline">คำนึงถึงผู้สูงอายุ ที่เที่ยวใหญ่ (จิบลิ / สวนสัตว์) เลือกอย่างใดอย่างหนึ่ง · จิบลิพื้นที่กว้างเดินเยอะ · 16 ต.ค. วันธรรมดา คนไม่แน่นมาก</div>
+      <div class="note-inline">คืนนี้พักใกล้สถานีนาโกย่าได้ เพราะเช้าวันรุ่งขึ้นนั่งรถไฟ μSKY ไปสนามบินแค่ ~28 นาที ทันเที่ยวบิน 10:25 สบาย ๆ</div>
+    </div>
+  </div>
+
+  <!-- Day 8 -->
+  <div class="day">
+    <div class="day-head">
+      <div class="badge"><span class="d">17</span><span class="m">OCT</span></div>
+      <div class="t"><div class="dow">เสาร์ · DAY 8</div><h2>เดินทางกลับ (สู่กรุงเทพฯ)</h2></div>
+    </div>
+    <div class="stay-band">🛏 <b>ที่พัก:</b> เดินทางกลับ (SQ671 / SQ720)</div>
+    <div class="day-body">
+      <ul class="timeline">
+        <li>เช้า นั่งรถไฟด่วน μSKY (มิวสกาย) นาโกย่า → สนามบินชูบุ เซ็นแทรร์ (~28 นาที) → เช็กอิน</li>
+        <li><span class="tm">10:25</span>ออกจากเซ็นแทรร์ (SQ671) → ถึงสิงคโปร์ 16:00</li>
+        <li>ต่อเครื่องที่ชางงี (2 ชม. 30 นาที)</li>
+        <li><span class="tm">18:30</span>ออกจากสิงคโปร์ (SQ720) → ถึงกรุงเทพฯ 20:00</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-title">✅ เช็กลิสต์การจอง</div>
+  <div class="notes">
+    <ul class="check">
+      <li>เรือเร็ว (Tsu Airport Line) 11 ต.ค. รอบ 12:00 × 6 คน</li>
+      <li>รถเช่า <b>2 คัน</b> (รับที่นางิสะมาจิ 11 ต.ค. → คืนที่มัตสึซากะ 15 ต.ค. · คนขับ 2 คน)</li>
+      <li>เอกสารคนขับ 2 คน: ใบขับขี่สากล ×2 · ใบขับขี่ในประเทศ · พาสปอร์ต · ชื่อผู้จอง/ผู้ขับ</li>
+      <li>ตั๋วรถไฟด่วนคินเท็ตสึ (15 ต.ค. มัตสึซากะ → นาโกย่า × 6)</li>
+      <li>โรงแรมมัตสึซากะ (4 คน) — คืน 11 / 12 / 14 ต.ค. (จองด่วน)</li>
+      <li>เรียวกังโทดายะ โทบะ <b>(8 คน · 4 ห้อง)</b> — คืน 13 ต.ค. (ออนเซ็นเหมาส่วนตัวฟรี 5 ห้อง · ไม่ต้องจอง · บ่อแช่เท้า 2 จุด)</li>
+      <li>ร้าน "อิชโชบิน" — ค่ำ 11 ต.ค. จอง <b>8 คน</b></li>
+      <li>ร้าน "อูนางิ โนะ ทาจิโนะ" — ค่ำ 12 ต.ค. จอง <b>8 คน</b> (โทร 0598-26-5550)</li>
+      <li>ร้าน "ชินยะ" — ค่ำ 14 ต.ค. จอง <b>8 คน</b> (โทร 0598-20-8929)</li>
+      <li>โรงแรมนาโกย่า (ใกล้สถานี) — คืน 15 / 16 ต.ค.</li>
+      <li>สวนสนุกจิบลิ (ถ้าไป 16 ต.ค.) — เปิดขาย 10 ส.ค. 14:00 · จอง 6 คน</li>
+      <li>สมัคร KrisFlyer (Wi-Fi ฟรีบนเครื่อง)</li>
+    </ul>
+  </div>
+
+  <div class="section-title">📝 ข้อควรทราบ</div>
+  <div class="notes">
+    <ul>
+      <li><b>ค่ำ 11–ค่ำ 14 ต.ค. พ่อแม่คุณคาซึ 2 ท่านมาสมทบ = รวม 8 คน</b>: มื้ออาหาร (11 อิชโชบิน/12 ทาจิโนะ/14 ชินยะ) และโทดายะ (13) จอง<b>สำหรับ 8 คน</b> (โทดายะ 4 ห้อง) · วันที่ 13 ไปโทบะ 8 คน เช็กที่นั่งรถเช่า 2 คัน หรือใช้รถพ่อแม่คุณคาซึด้วย · 15 ต.ค. เป็นต้นไปกลับเป็น 6 คน</li>
+      <li><b>โรงแรมมัตสึซากะใช้ที่เดียวกัน (11 / 12 / 14 ต.ค.)</b>: เช้า 13 เช็กเอาต์ไปโทบะ, 14 กลับมาเช็กอินอีกครั้ง ระหว่างไปพักโทบะ ฝากกระเป๋าใบใหญ่ไว้ที่โรงแรม ※ ยา ของมีค่า เสื้อผ้า 1 คืน ถือติดตัวไป</li>
+      <li><b>รถเช่า 2 คัน</b>: รับ 2 คันที่นางิสะมาจิ (11 ต.ค.) → คืน 2 คันที่มัตสึซากะ (เช้า 15 ต.ค.) · ช่วยให้ 6 คน + สัมภาระสบายขึ้น · แบ่งกันขับ 2 คน</li>
+      <li><b>การเดินทางหลัง 15 ต.ค.</b>: มัตสึซากะ → นาโกย่า รถไฟด่วนคินเท็ตสึ (~1 ชม. 8 นาที) · ในเมืองใช้รถไฟใต้ดิน/เมเท็ตสึ · เช้า 17 ต.ค. μSKY นาโกย่า → สนามบิน ~28 นาที</li>
+      <li><b>จองจิบลิ (ถ้าไป 16 ต.ค.)</b>: ระบุวันเวลา ไม่มีขายหน้างาน · รอบเดือนตุลาคมเปิดขาย 10 ส.ค. 14:00 (เว็บ Boo-Woo) · ผู้ใหญ่วันธรรมดา 3,300–7,300 เยน</li>
+      <li><b>ถ้าเรือเร็วงดวิ่ง</b>: เส้นทางสำรอง — เมเท็ตสึ สนามบิน → นาโกย่า แล้วต่อคินเท็ตสึ/JR นาโกย่า → สึ/มัตสึซากะ · เช็กว่าเปลี่ยนจุดรับรถเช่าได้ไหม</li>
+      <li><b>เสื้อผ้า</b>: กลางเดือนตุลาคม เช้า–เย็นอากาศเย็น ควรมีเสื้อคลุม</li>
+    </ul>
+  </div>
+
+  <footer>
+    ทริปครอบครัวเที่ยวญี่ปุ่น 2026<br>
+    ※ ที่เที่ยวและเวลาเป็นแบบร่าง ปรับได้ตามการจองจริง
+  </footer>
+
+</div>
+
+</div>
+
+<script>
+(function(){
+  var TITLES = {ja:"三重・名古屋 家族旅行 2026", th:"ทริปครอบครัวเที่ยวญี่ปุ่น 2026 — มิเอะ & นาโกย่า"};
+  var docs = document.querySelectorAll('.doc');
+  var btns = document.querySelectorAll('.langbtn');
+
+  function apply(lang, updateHash){
+    if(lang !== 'th'){ lang = 'ja'; }
+    document.documentElement.lang = lang;
+    document.title = TITLES[lang];
+    for(var i=0;i<docs.length;i++){
+      docs[i].classList.toggle('active', docs[i].id === 'doc-' + lang);
+    }
+    for(var j=0;j<btns.length;j++){
+      var on = btns[j].getAttribute('data-lang') === lang;
+      btns[j].classList.toggle('active', on);
+      btns[j].setAttribute('aria-selected', on ? 'true' : 'false');
+    }
+    if(updateHash && location.hash !== '#' + lang){
+      if(history.replaceState){ history.replaceState(null, '', '#' + lang); }
+      else { location.hash = lang; }
+    }
+  }
+
+  function wanted(){
+    var h = (location.hash || '').replace('#','').toLowerCase();
+    if(h === 'ja' || h === 'th'){ return h; }
+    var n = (navigator.language || navigator.userLanguage || '').toLowerCase();
+    return n.indexOf('th') === 0 ? 'th' : 'ja';
+  }
+
+  for(var k=0;k<btns.length;k++){
+    (function(b){
+      b.addEventListener('click', function(){
+        apply(b.getAttribute('data-lang'), true);
+        window.scrollTo(0, 0);
+      });
+    })(btns[k]);
+  }
+  window.addEventListener('hashchange', function(){ apply(wanted(), false); });
+  apply(wanted(), false);
+})();
+</script>
+
 </body>
 </html>
