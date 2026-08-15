@@ -131,9 +131,20 @@
   }
   .planbadge.plan-a{background:#dfe8f3; color:var(--navy);}
   .planbadge.plan-b{background:var(--gold-soft); color:var(--navy);}
-  @media(min-width:760px){
-    .planbadge{font-size:28px; padding:7px 34px;}
-  }
+  @media(min-width:760px){ .planbadge{font-size:28px; padding:7px 34px;} }
+  .note-inline a, .day-body a{color:var(--navy); font-weight:700;
+    text-decoration:underline; text-underline-offset:3px; word-break:break-word;}
+
+  /* ===== 動画セクション / ส่วนวิดีโอ ===== */
+  .videos{display:grid; gap:14px;}
+  @media(min-width:760px){ .videos{grid-template-columns:1fr 1fr;} }
+  .vcard{background:var(--paper); border:1px solid var(--line); border-radius:12px;
+         overflow:hidden; box-shadow:0 1px 3px rgba(31,58,95,.05);}
+  .vframe{position:relative; width:100%; padding-top:56.25%; background:#000;}
+  .vframe iframe{position:absolute; top:0; left:0; width:100%; height:100%; border:0;}
+  .vcap{padding:11px 14px 13px; font-size:13.5px; line-height:1.7;}
+  .vcap .vt{color:var(--navy); font-weight:700; display:block; margin-bottom:2px;}
+  .vcap .ch{color:var(--muted); font-size:12.5px; display:block; margin-top:3px;}
 
 </style>
 </head>
@@ -161,7 +172,21 @@
 
 <div class="wrap">
 
-  <div class="section-title">✈ フライト</div>
+    <div class="section-title">🎬 動画で見る（タイ語）</div>
+  <div class="videos">
+    <div class="vcard">
+      <div class="vframe"><iframe src="https://www.youtube-nocookie.com/embed/OG5BFMx2Kv4" title="Tokoname" loading="lazy" allowfullscreen></iframe></div>
+      <div class="vcap"><span class="vt">DAY 6 ・ 常滑（やきもの散歩道）</span>
+        ที่เที่ยวใกล้สนามบินนาโกย่าคนรู้น้อยมาก<span class="ch">チャンネル：กินอยู่ดี（kinyuud）</span></div>
+    </div>
+    <div class="vcard">
+      <div class="vframe"><iframe src="https://www.youtube-nocookie.com/embed/kqNmBGhgrRY" title="Around Nagoya" loading="lazy" allowfullscreen></iframe></div>
+      <div class="vcap"><span class="vt">DAY 7 ・ 名古屋近郊の街（西尾ほか）</span>
+        นาโกย่าและ 4 เมืองน่าเที่ยวใกล้นาโกย่า<span class="ch">チャンネル：FOLLOW ME Creator</span></div>
+    </div>
+  </div>
+
+<div class="section-title">✈ フライト</div>
   <div class="flights">
   <div class="flight-card">
     <h3>往路 — 10月10日(土) 発</h3>
@@ -298,13 +323,14 @@
         <li><span class="tm">11:00</span><b>高速船</b>で津なぎさまち → 中部国際空港（45分）<span class="tag">要予約</span></li>
         <li><span class="tm">12:00</span>セントレアで<b>レンタカー1台</b>を受取（8人乗り・運転手2名を登録）→ 常滑駅周辺へ</li>
         <li><span class="tm">12:45</span>常滑駅周辺でランチ（先に宿へ寄って荷物を預けると午後が身軽）</li>
-        <li><span class="tm">13:45</span><b>やきもの散歩道</b>を散策（土管坂・登窯など）</li>
+        <li><span class="tm">13:45</span><b>やきもの散歩道</b>を散策（土管坂・登窯・巨大招き猫「とこにゃん」・招き猫通り）</li>
         <li><span class="tm">15:00</span><b>INAXライブミュージアム</b>（屋内・やきものとタイルの博物館／大人1,000円）<span class="tag">入館は16:30まで</span></li>
         <li><span class="tm">16:00</span><b>めんたいパークとこなめ</b>（入場無料・屋内・工場見学と試食）</li>
         <li><span class="tm">18:00</span>常滑駅周辺の宿にチェックイン</li>
       </ul>
       <div class="note-inline">荷物は車で宿へ、人は名鉄で中部国際空港 → 常滑（5分・330円）に分かれると楽。ランチ前に宿へ荷物を預けてしまえば、午後は身軽に回れる。</div>
-      <div class="note-inline">やきもの散歩道は坂と階段が多め。ご両親は土管坂の入口など平坦な部分だけでも十分に雰囲気が味わえる。</div>
+      <div class="note-inline">やきもの散歩道は坂と階段が多め。ご両親は土管坂の入口など平坦な部分だけでも十分に雰囲気が味わえる。巨大招き猫「とこにゃん」と招き猫通りは平坦で、記念写真の定番。</div>
+      <div class="note-inline">▶ タイのYouTubeチャンネル「กินอยู่ดี（kinyuud）」が常滑を紹介しています：<a href="https://youtu.be/OG5BFMx2Kv4" target="_blank" rel="noopener">ที่เที่ยวใกล้สนามบินนาโกย่าคนรู้น้อยมาก</a>（セントレア近くの穴場、という切り口の回）</div>
       <div class="note-inline">INAXライブミュージアムは17:00閉館・入館受付16:30まで。15:00に入れば余裕をもって見られる。めんたいパークは平日17:30まで（入場無料）なので、閉館の早いINAXを先に。</div>
       <div class="note-inline">高速船の平日ダイヤは要確認。欠航時は津から車でセントレアへ（伊勢湾岸道経由 約1時間45分）。レンタカーの返却場所を変更できるか事前に確認を。</div>
     </div>
@@ -331,6 +357,7 @@
       <div class="note-inline">西尾の見どころはいずれも屋内か平坦で、歩く量は少なめ。片道約1時間15分の移動は車内で休みながら。運転は2名で交代を。</div>
       <div class="note-inline">抹茶は旧近衛邸で（6名で約3,600円・予約不要）。受付10:00〜16:00の間ならいつでも入れるので、時間が前後しても大丈夫。</div>
       <div class="note-inline">16:15にいったん宿へ戻って休憩を入れる形。買い物に付き合うのが大変なら、ご両親は部屋で休んでいてもよい。</div>
+      <div class="note-inline">▶ タイのYouTubeチャンネル「FOLLOW ME Creator」が名古屋近郊の街を紹介しています：<a href="https://youtu.be/kqNmBGhgrRY" target="_blank" rel="noopener">นาโกย่าและ 4 เมืองน่าเที่ยวใกล้นาโกย่า</a></div>
     </div>
   </div>
 
@@ -410,7 +437,21 @@
 
 <div class="wrap">
 
-  <div class="section-title">✈ เที่ยวบิน</div>
+    <div class="section-title">🎬 ดูวิดีโอแนะนำ</div>
+  <div class="videos">
+    <div class="vcard">
+      <div class="vframe"><iframe src="https://www.youtube-nocookie.com/embed/OG5BFMx2Kv4" title="Tokoname" loading="lazy" allowfullscreen></iframe></div>
+      <div class="vcap"><span class="vt">DAY 6 · โทโคนาเมะ (ถนนเครื่องปั้นดินเผา)</span>
+        ที่เที่ยวใกล้สนามบินนาโกย่าคนรู้น้อยมาก<span class="ch">ช่อง: กินอยู่ดี (kinyuud)</span></div>
+    </div>
+    <div class="vcard">
+      <div class="vframe"><iframe src="https://www.youtube-nocookie.com/embed/kqNmBGhgrRY" title="Around Nagoya" loading="lazy" allowfullscreen></iframe></div>
+      <div class="vcap"><span class="vt">DAY 7 · เมืองน่าเที่ยวใกล้นาโกย่า (นิชิโอะ ฯลฯ)</span>
+        นาโกย่าและ 4 เมืองน่าเที่ยวใกล้นาโกย่า<span class="ch">ช่อง: FOLLOW ME Creator</span></div>
+    </div>
+  </div>
+
+<div class="section-title">✈ เที่ยวบิน</div>
   <div class="flights">
   <div class="flight-card">
     <h3>ขาไป — 10 ต.ค. (เสาร์)</h3>
@@ -547,13 +588,14 @@
         <li><span class="tm">11:00</span><b>เรือเร็ว</b> นางิสะมาจิ → สนามบินชูบุ เซ็นแทรร์ (45 นาที) <span class="tag">ต้องจอง</span></li>
         <li><span class="tm">12:00</span>รับ<b>รถเช่า 1 คัน</b>ที่เซ็นแทรร์ (8 ที่นั่ง · ลงทะเบียนคนขับ 2 คน) → ไปย่านสถานีโทโคนาเมะ</li>
         <li><span class="tm">12:45</span>ทานอาหารกลางวันแถวสถานีโทโคนาเมะ (แวะฝากกระเป๋าที่โรงแรมก่อนจะสบายกว่า)</li>
-        <li><span class="tm">13:45</span>เดินเล่น<b>ถนนเครื่องปั้นดินเผา (Yakimono Sanpomichi)</b> · เนินท่อดินเผา · เตาเผาโบราณ</li>
+        <li><span class="tm">13:45</span>เดินเล่น<b>ถนนเครื่องปั้นดินเผา (Yakimono Sanpomichi)</b> · เนินท่อดินเผา · เตาเผาโบราณ · <b>แมวกวักยักษ์ "โทโคนยัง"</b> และถนนแมวกวัก</li>
         <li><span class="tm">15:00</span><b>INAX Live Museum</b> (ในร่ม · พิพิธภัณฑ์เครื่องปั้นดินเผาและกระเบื้อง · ผู้ใหญ่ 1,000 เยน) <span class="tag">เข้าได้ถึง 16:30</span></li>
         <li><span class="tm">16:00</span><b>Mentai Park Tokoname</b> (เข้าฟรี · ในร่ม · ชมโรงงานและชิมฟรี)</li>
         <li><span class="tm">18:00</span>เช็กอินที่พักใกล้สถานีโทโคนาเมะ</li>
       </ul>
       <div class="note-inline">แยกกันสะดวกกว่า: สัมภาระไปกับรถ ส่วนคนนั่งรถไฟเมย์เท็ตสึ สนามบิน → โทโคนาเมะ (5 นาที · 330 เยน) ฝากกระเป๋าที่โรงแรมก่อนมื้อกลางวัน แล้วเที่ยวต่อแบบตัวเบา</div>
-      <div class="note-inline">ถนนเครื่องปั้นดินเผามีเนินและบันไดค่อนข้างมาก ผู้สูงอายุเดินเฉพาะช่วงราบตรงทางเข้า (เนินท่อดินเผา) ก็ได้บรรยากาศแล้ว</div>
+      <div class="note-inline">ถนนเครื่องปั้นดินเผามีเนินและบันไดค่อนข้างมาก ผู้สูงอายุเดินเฉพาะช่วงราบตรงทางเข้า (เนินท่อดินเผา) ก็ได้บรรยากาศแล้ว · จุดถ่ายรูปยอดนิยมคือแมวกวักยักษ์ "โทโคนยัง" ซึ่งอยู่บนพื้นราบ</div>
+      <div class="note-inline">▶ ช่อง <b>กินอยู่ดี (kinyuud)</b> เคยรีวิวโทโคนาเมะไว้: <a href="https://youtu.be/OG5BFMx2Kv4" target="_blank" rel="noopener">ที่เที่ยวใกล้สนามบินนาโกย่าคนรู้น้อยมาก</a></div>
       <div class="note-inline">INAX Live Museum ปิด 17:00 และรับเข้าถึง 16:30 · เข้าเวลา 15:00 จึงมีเวลาชมสบาย ๆ ส่วน Mentai Park เปิดถึง 17:30 (วันธรรมดา) และเข้าฟรี จึงจัดไว้ทีหลัง</div>
       <div class="note-inline">ต้องเช็กตารางเรือวันธรรมดาอีกครั้ง หากเรืองดวิ่ง ให้ขับรถจากสึไปเซ็นแทรร์แทน (~1 ชม. 45 นาที) และควรถามบริษัทรถเช่าล่วงหน้าว่าเปลี่ยนจุดคืนรถได้หรือไม่</div>
     </div>
@@ -580,6 +622,7 @@
       <div class="note-inline">จุดเที่ยวในนิชิโอะเป็นในร่มหรือพื้นราบทั้งหมด เดินน้อยมาก ระยะทางไป-กลับข้างละ ~1 ชม. 15 นาที พักผ่อนในรถได้ · แบ่งกันขับ 2 คน</div>
       <div class="note-inline">เลือกจิบมัตฉะที่บ้านโคโนเอะ (6 คน ~3,600 เยน · ไม่ต้องจอง) เข้าได้ทุกเวลาในช่วง 10:00–16:00 จึงยืดหยุ่นกว่า</div>
       <div class="note-inline">กลับมาพักที่โรงแรมก่อนช่วง 16:15 · ถ้าคุณพ่อคุณแม่เหนื่อย จะพักที่ห้องแล้วไม่ไปห้างก็ได้</div>
+      <div class="note-inline">▶ ช่อง <b>FOLLOW ME Creator</b> แนะนำเมืองน่าเที่ยวใกล้นาโกย่าไว้: <a href="https://youtu.be/kqNmBGhgrRY" target="_blank" rel="noopener">นาโกย่าและ 4 เมืองน่าเที่ยวใกล้นาโกย่า</a></div>
     </div>
   </div>
 
